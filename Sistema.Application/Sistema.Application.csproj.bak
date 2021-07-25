@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1A2E6FC-A4EB-4C53-B751-5DC2C2F64A84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema.Application</RootNamespace>
+    <AssemblyName>Sistema.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormsBase\FormBaseCreate.cs" />
+    <Compile Include="FormsBase\FormBaseList.cs" />
+    <Compile Include="Implementations\AppBaseImp.cs" />
+    <Compile Include="Implementations\Entity\ContactoAppImp.cs" />
+    <Compile Include="Implementations\Entity\DocumentoEntidadeAppImp.cs" />
+    <Compile Include="Implementations\Entity\EntidadeAppImp.cs" />
+    <Compile Include="Implementations\Entity\EntidadePessoaAppImp.cs" />
+    <Compile Include="Implementations\Entity\FornecedorAppImp.cs" />
+    <Compile Include="Implementations\Entity\HabilitacaoAppImp.cs" />
+    <Compile Include="Implementations\Entity\LocalidadeAppImp.cs" />
+    <Compile Include="Implementations\Entity\ProfissaoAppImp.cs" />
+    <Compile Include="Implementations\Entity\TipoContactoAppImp.cs" />
+    <Compile Include="Implementations\Entity\TipoDocumentoEntidadeAppImp.cs" />
+    <Compile Include="Implementations\Financeiro\BancoAppImp.cs" />
+    <Compile Include="Implementations\Financeiro\ContaBancariaAppImp.cs" />
+    <Compile Include="Implementations\Geral\PaisAppImp.cs" />
+    <Compile Include="Interfaces\Admin\AcessoApp.cs" />
+    <Compile Include="Interfaces\Admin\AreaApp.cs" />
+    <Compile Include="Interfaces\Admin\CaixaApp.cs" />
+    <Compile Include="Interfaces\Admin\PerfilApp.cs" />
+    <Compile Include="Interfaces\Admin\TurnoApp.cs" />
+    <Compile Include="Interfaces\Admin\UsuarioApp.cs" />
+    <Compile Include="Interfaces\AppBase.cs" />
+    <Compile Include="Interfaces\Documemtos\DocumentoApp.cs" />
+    <Compile Include="Interfaces\Documemtos\OperacaoApp.cs" />
+    <Compile Include="Interfaces\Entity\ContactoApp.cs" />
+    <Compile Include="Interfaces\Entity\DocumentoEntidadeApp.cs" />
+    <Compile Include="Interfaces\Entity\EntidadePessoaApp.cs" />
+    <Compile Include="Interfaces\Entity\EntidadeApp.cs" />
+    <Compile Include="Interfaces\Entity\FornecedorApp.cs" />
+    <Compile Include="Interfaces\Entity\HabilitacaoApp.cs" />
+    <Compile Include="Interfaces\Entity\LocalidadeApp.cs" />
+    <Compile Include="Interfaces\Entity\ProfissaoApp.cs" />
+    <Compile Include="Interfaces\Entity\TipoContactoApp.cs" />
+    <Compile Include="Interfaces\Entity\TipoDocumentoEntidadeApp.cs" />
+    <Compile Include="Interfaces\Financeiro\BancoApp.cs" />
+    <Compile Include="Interfaces\Financeiro\CambioApp.cs" />
+    <Compile Include="Interfaces\Financeiro\ContaBancariaApp.cs" />
+    <Compile Include="Interfaces\Financeiro\FormaPagamentoApp.cs" />
+    <Compile Include="Interfaces\Financeiro\MoedaApp.cs" />
+    <Compile Include="Interfaces\Financeiro\PagamentoApp.cs" />
+    <Compile Include="Interfaces\Geral\PaisApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArmazemApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoIntegracaoApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoIntegranteApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoInventarioApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoMovimentoApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoSubstituicaoApp.cs" />
+    <Compile Include="Interfaces\Inventario\ArtigoSubstitutoApp.cs" />
+    <Compile Include="Interfaces\Inventario\CategoriaApp.cs" />
+    <Compile Include="Interfaces\Inventario\TipoCategoriaApp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enuns\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormsBase\FormBaseCreate.resx">
+      <DependentUpon>FormBaseCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBase\FormBaseList.resx">
+      <DependentUpon>FormBaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sistema.Domain\Sistema.Domain.csproj">
+      <Project>{020e7e8c-51d0-4656-af89-eb2ef52340f7}</Project>
+      <Name>Sistema.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

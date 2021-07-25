@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{020E7E8C-51D0-4656-AF89-EB2EF52340F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema.Domain</RootNamespace>
+    <AssemblyName>Sistema.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Admin\Acesso.cs" />
+    <Compile Include="Entities\Admin\Area.cs" />
+    <Compile Include="Entities\Admin\Caixa.cs" />
+    <Compile Include="Entities\Admin\Perfil.cs" />
+    <Compile Include="Entities\Admin\Turno.cs" />
+    <Compile Include="Entities\Admin\Usuario.cs" />
+    <Compile Include="Entities\Documentos\Documento.cs" />
+    <Compile Include="Entities\Documentos\Operacao.cs" />
+    <Compile Include="Entities\Entity\Fornecedor.cs" />
+    <Compile Include="Entities\Financeiro\Cambio.cs" />
+    <Compile Include="Entities\Financeiro\ContaBancaria.cs" />
+    <Compile Include="Entities\Entity\Contacto.cs" />
+    <Compile Include="Entities\Entity\DocumentoEntidade.cs" />
+    <Compile Include="Entities\Entity\Entidade.cs" />
+    <Compile Include="Entities\Entity\EntidadePessoa.cs" />
+    <Compile Include="Entities\Entity\Habilitacao.cs" />
+    <Compile Include="Entities\Entity\Localidade.cs" />
+    <Compile Include="Entities\Entity\TipoContacto.cs" />
+    <Compile Include="Entities\Entity\TipoDocumentoEntidade.cs" />
+    <Compile Include="Entities\Financeiro\Banco.cs" />
+    <Compile Include="Entities\Financeiro\FormaPagamento.cs" />
+    <Compile Include="Entities\Financeiro\Moeda.cs" />
+    <Compile Include="Entities\Financeiro\Pagamento.cs" />
+    <Compile Include="Entities\Inventario\Armazem.cs" />
+    <Compile Include="Entities\Inventario\Artigo.cs" />
+    <Compile Include="Entities\Inventario\ArtigoIntegracao.cs" />
+    <Compile Include="Entities\Inventario\ArtigoIntegrante.cs" />
+    <Compile Include="Entities\Inventario\ArtigoInventario.cs" />
+    <Compile Include="Entities\Inventario\ArtigoMovimento.cs" />
+    <Compile Include="Entities\Inventario\ArtigoSubstituicao.cs" />
+    <Compile Include="Entities\Inventario\ArtigoSubstituto.cs" />
+    <Compile Include="Entities\Inventario\Categoria.cs" />
+    <Compile Include="Entities\Inventario\Imposto.cs" />
+    <Compile Include="Entities\Inventario\MotivoIsencaoImposto.cs" />
+    <Compile Include="Entities\Inventario\SerieArtigo.cs" />
+    <Compile Include="Entities\Inventario\TipoCategoria.cs" />
+    <Compile Include="Entities\GeralEntity\Pais.cs" />
+    <Compile Include="Entities\Entity\Profissao.cs" />
+    <Compile Include="Entities\Inventario\TipoImposto.cs" />
+    <Compile Include="Enuns Entities\OperacaoAcesso.cs" />
+    <Compile Include="Enuns Entities\PeriodoDia.cs" />
+    <Compile Include="Enuns Entities\TipoEmicaoDocumento.cs" />
+    <Compile Include="Enuns Entities\TipoPagamento.cs" />
+    <Compile Include="Enuns Entities\TipoResultado.cs" />
+    <Compile Include="Enuns Entities\TypeEstadoCivil.cs" />
+    <Compile Include="Enuns Entities\TypeEstodoTurno.cs" />
+    <Compile Include="Enuns Entities\TypeOperationForm.cs" />
+    <Compile Include="Enuns Entities\TypeSexo.cs" />
+    <Compile Include="Enuns Entities\StateDocument.cs" />
+    <Compile Include="Enuns Entities\TypeEntity.cs" />
+    <Compile Include="Enuns Entities\TypeMovimento.cs" />
+    <Compile Include="Enuns Entities\TypePerson.cs" />
+    <Compile Include="Interfaces\Repository\Admin\AcessoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Admin\AreaRepository.cs" />
+    <Compile Include="Interfaces\Repository\Admin\CaixaRepository.cs" />
+    <Compile Include="Interfaces\Repository\Admin\PerfilRepository.cs" />
+    <Compile Include="Interfaces\Repository\Admin\TurnoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Admin\UsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repository\Documemtos\DocumentoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Documemtos\OperacaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\ContactoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\DocumentoEntidadeRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\EntidadePessoaRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\EntidadeRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\FornecedorRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\HabilitacaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\LocalidadeRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\ProfissaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\TipoContactoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Entity\TipoDocumentoEntidadeRepository.cs" />
+    <Compile Include="Interfaces\Repository\Financeiro\BancoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Financeiro\CambioRepository.cs" />
+    <Compile Include="Interfaces\Repository\Financeiro\ContaBancariaRepository.cs" />
+    <Compile Include="Interfaces\Repository\Financeiro\FormaPagamentoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Financeiro\MoedaRepository.cs" />
+    <Compile Include="Interfaces\Repository\Financeiro\PagamentoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Geral\PaisRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArmazemRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoIntegracaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoIntegranteRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoInventarioRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoMovimentoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoSubstituicaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\ArtigoSubstitutoRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\CategoriaRepository.cs" />
+    <Compile Include="Interfaces\Repository\Inventario\TipoCategoriaRepository.cs" />
+    <Compile Include="Interfaces\Repository\RepositoryBase.cs" />
+    <Compile Include="Interfaces\Service\Admin\AcessoService.cs" />
+    <Compile Include="Interfaces\Service\Admin\AreaService.cs" />
+    <Compile Include="Interfaces\Service\Admin\CaixaService.cs" />
+    <Compile Include="Interfaces\Service\Admin\PerfilService.cs" />
+    <Compile Include="Interfaces\Service\Admin\TurnoService.cs" />
+    <Compile Include="Interfaces\Service\Admin\UsuarioRepository.cs" />
+    <Compile Include="Interfaces\Service\Documentos\DocumentoService.cs" />
+    <Compile Include="Interfaces\Service\Documentos\OperacaoService.cs" />
+    <Compile Include="Interfaces\Service\Entity\ContactoService.cs" />
+    <Compile Include="Interfaces\Service\Entity\DocumentoEntidadeService.cs" />
+    <Compile Include="Interfaces\Service\Entity\EntidadePessoaRepository.cs" />
+    <Compile Include="Interfaces\Service\Entity\EntidadeService.cs" />
+    <Compile Include="Interfaces\Service\Entity\FornecedorService.cs" />
+    <Compile Include="Interfaces\Service\Entity\HabilitacaoService.cs" />
+    <Compile Include="Interfaces\Service\Entity\LocalidadeService.cs" />
+    <Compile Include="Interfaces\Service\Entity\ProfissaoService.cs" />
+    <Compile Include="Interfaces\Service\Entity\TipoContactoService.cs" />
+    <Compile Include="Interfaces\Service\Entity\TipoDocumentoEntidadeService.cs" />
+    <Compile Include="Interfaces\Service\Financeiro\BancoService.cs" />
+    <Compile Include="Interfaces\Service\Financeiro\CambioService.cs" />
+    <Compile Include="Interfaces\Service\Financeiro\ContaBancariaService.cs" />
+    <Compile Include="Interfaces\Service\Financeiro\FormaPagamentoService.cs" />
+    <Compile Include="Interfaces\Service\Financeiro\MoedaService.cs" />
+    <Compile Include="Interfaces\Service\Financeiro\PagamentoService.cs" />
+    <Compile Include="Interfaces\Service\Geral\PaisService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArmazemService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoIntegracaoService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoIntegranteService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoInventarioService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoMovimentoService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoSubstituicaoService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\ArtigoSubstitutoService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\CategoriaService.cs" />
+    <Compile Include="Interfaces\Service\Inventario\TipoCategoriaService.cs" />
+    <Compile Include="Interfaces\Service\ServiceBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Financeiro\ContaBancariaViewModel.cs" />
+    <Compile Include="ViewModels\Entity\ContactoViewModel.cs" />
+    <Compile Include="ViewModels\Geral\Resultado.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

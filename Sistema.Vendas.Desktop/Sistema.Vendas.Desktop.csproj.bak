@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5C277B2-2A7D-402E-B583-37AF7F59EFE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema.Vendas.Desktop</RootNamespace>
+    <AssemblyName>Sistema.Vendas.Desktop</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\Forms\Entities\FormAddContact.cs" />
+    <Compile Include="Views\Forms\Entities\FormAddContact.Designer.cs">
+      <DependentUpon>FormAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormAddDocumentoEntity.cs" />
+    <Compile Include="Views\Forms\Entities\FormAddDocumentoEntity.Designer.cs">
+      <DependentUpon>FormAddDocumentoEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormAddLocalidade.cs" />
+    <Compile Include="Views\Forms\Entities\FormAddLocalidade.Designer.cs">
+      <DependentUpon>FormAddLocalidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormEntidades.cs" />
+    <Compile Include="Views\Forms\Entities\FormEntidades.Designer.cs">
+      <DependentUpon>FormEntidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormHabilitacoes.cs" />
+    <Compile Include="Views\Forms\Entities\FormHabilitacoes.Designer.cs">
+      <DependentUpon>FormHabilitacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormProfissoes.cs" />
+    <Compile Include="Views\Forms\Entities\FormProfissoes.Designer.cs">
+      <DependentUpon>FormProfissoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormSaveEntity.cs" />
+    <Compile Include="Views\Forms\Entities\FormSaveEntity.Designer.cs">
+      <DependentUpon>FormSaveEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormTipoContactos.cs" />
+    <Compile Include="Views\Forms\Entities\FormTipoContactos.Designer.cs">
+      <DependentUpon>FormTipoContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Entities\FormTypeDocuments.cs" />
+    <Compile Include="Views\Forms\Entities\FormTypeDocuments.Designer.cs">
+      <DependentUpon>FormTypeDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Financeiros\FormAddContaBancaria.cs" />
+    <Compile Include="Views\Forms\Financeiros\FormAddContaBancaria.Designer.cs">
+      <DependentUpon>FormAddContaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Financeiros\FormBancos.cs" />
+    <Compile Include="Views\Forms\Financeiros\FormBancos.Designer.cs">
+      <DependentUpon>FormBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Gerais\FormPais.cs" />
+    <Compile Include="Views\Forms\Gerais\FormPais.Designer.cs">
+      <DependentUpon>FormPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Inventarios\FormAddArmazem.cs" />
+    <Compile Include="Views\Forms\Inventarios\FormAddArmazem.Designer.cs">
+      <DependentUpon>FormAddArmazem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Inventarios\FormArmazens.cs" />
+    <Compile Include="Views\Forms\Inventarios\FormArmazens.Designer.cs">
+      <DependentUpon>FormArmazens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Inventarios\FormArtigos.cs" />
+    <Compile Include="Views\Forms\Inventarios\FormArtigos.Designer.cs">
+      <DependentUpon>FormArtigos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Inventarios\FormCategorias.cs" />
+    <Compile Include="Views\Forms\Inventarios\FormCategorias.Designer.cs">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Inventarios\FormSaveArtigo.cs" />
+    <Compile Include="Views\Forms\Inventarios\FormSaveArtigo.Designer.cs">
+      <DependentUpon>FormSaveArtigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Main\FormMain.cs" />
+    <Compile Include="Views\Forms\Main\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Sales\FormTelaDeVendas.cs" />
+    <Compile Include="Views\Forms\Sales\FormTelaDeVendas.Designer.cs">
+      <DependentUpon>FormTelaDeVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\Forms\Entities\FormAddContact.resx">
+      <DependentUpon>FormAddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormAddDocumentoEntity.resx">
+      <DependentUpon>FormAddDocumentoEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormAddLocalidade.resx">
+      <DependentUpon>FormAddLocalidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormEntidades.resx">
+      <DependentUpon>FormEntidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormHabilitacoes.resx">
+      <DependentUpon>FormHabilitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormProfissoes.resx">
+      <DependentUpon>FormProfissoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormSaveEntity.resx">
+      <DependentUpon>FormSaveEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormTipoContactos.resx">
+      <DependentUpon>FormTipoContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Entities\FormTypeDocuments.resx">
+      <DependentUpon>FormTypeDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Financeiros\FormAddContaBancaria.resx">
+      <DependentUpon>FormAddContaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Financeiros\FormBancos.resx">
+      <DependentUpon>FormBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Gerais\FormPais.resx">
+      <DependentUpon>FormPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Inventarios\FormAddArmazem.resx">
+      <DependentUpon>FormAddArmazem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Inventarios\FormArmazens.resx">
+      <DependentUpon>FormArmazens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Inventarios\FormArtigos.resx">
+      <DependentUpon>FormArtigos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Inventarios\FormCategorias.resx">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Inventarios\FormSaveArtigo.resx">
+      <DependentUpon>FormSaveArtigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Main\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Sales\FormTelaDeVendas.resx">
+      <DependentUpon>FormTelaDeVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sistema.Application\Sistema.Application.csproj">
+      <Project>{b1a2e6fc-a4eb-4c53-b751-5dc2c2f64a84}</Project>
+      <Name>Sistema.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sistema.Domain\Sistema.Domain.csproj">
+      <Project>{020e7e8c-51d0-4656-af89-eb2ef52340f7}</Project>
+      <Name>Sistema.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sistema.Framework\Sistema.Framework.csproj">
+      <Project>{d9f77bf5-29c9-4533-98a0-89006eb2fdae}</Project>
+      <Name>Sistema.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checked Checkbox_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contacts_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank Card Front Side_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Folder_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interior_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person Male_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warehouse_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player Change_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collage_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrator Male_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female User_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Product_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buying_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_35px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

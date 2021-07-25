@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1">
+  <g id="Picture">
+    <rect x="2" y="2" width="28" height="28" rx="0" ry="0" fill="#FFB115" class="Yellow" />
+    <rect x="4" y="4" width="24" height="24" rx="0" ry="0" fill="#FFFFFF" class="White" />
+    <polygon points="2,20 10,12 22,22 30,14 30,30 2,30  " fill="#039C23" class="Green" />
+    <circle cx="21" cy="11" r="3" fill="#FFB115" class="Yellow" />
+  </g>
+</svg>
